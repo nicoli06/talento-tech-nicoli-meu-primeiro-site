@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+
+    <!-- Seção 1: HTML Forms -->
+    <h1>HTML Forms</h1>
+    <form action="action_page.php" method="get">
+        <label for="fname">Primeiro name:</label><br>
+        <input type="text" id="fname" name="fname" value="Nicoli"><br>
+        <label for="lname">Sobrenome:</label><br>
+        <input type="text" id="lname" name="lname" value="Ramos"><br><br>
+        <input type="submit" value="Confirmar">
+    </form>
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+    <!-- Seção 2: Date Field Restrictions -->
+    <h2>Date Field Restrictions</h2>
+    <p>Use the min and max attributes to add restrictions to dates:</p>
+    <form action="action_page.php" method="get">
+        <label for="dateAfter">Enter a date after 2000-01-01:</label><br>
+        <input type="date" id="dateAfter" name="dateAfter" min="2000-01-02"><br>
+        <label for="dateBefore">Enter a date before 1980-01-01:</label><br>
+        <input type="date" id="dateBefore" name="dateBefore" max="1979-12-31"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p><strong>Note:</strong> type="date" is not supported in Internet Explorer 11.</p>
+
+    <!-- Seção 3: The select Element -->
+    <h2>The select Element</h2>
+    <p>The select element defines a drop-down list:</p>
+    <form action="action_page.php" method="get">
+        <label for="cars">Choose a car:</label><br>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br><br>
+        <input type="submit" value="ENVIAR">
+    </form>
+
+</body>
+</html>
